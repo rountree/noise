@@ -16,7 +16,7 @@
 #include <unistd.h>
 
 static constexpr const uint8_t tsc_sz = 64; // size in bits
-static constexpr const uint64_t reps = 1'000'000ULL;
+static constexpr const uint64_t reps = 10'000'000'000ULL;
 static uint64_t log2_tsc_delta[CPU_SETSIZE][tsc_sz];
 static uint64_t log2_tscp_delta[CPU_SETSIZE][tsc_sz];
 
